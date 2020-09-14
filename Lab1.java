@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 
-public class Lab1{
+public class Main{
     public static void main(String[] args){
         int[] d = new int[7];
 		for (int i = 0; i < 7; i++)
@@ -26,14 +26,14 @@ public class Lab1{
                 } else {
                     f[i][j] = Math.pow(
 					// основание
-					Math.sin(Math.pow(x[j], (Math.pow((x[j] / 2 + 1/ 8), 2) - 1) / 1.5)),
+					Math.sin(Math.pow(x[j], (Math.pow((x[j] / 2f + 0.125), 2) - 1) / 1.5f)),
 					// степень
-					Math.atan(Math.pow((x[j] - 2) / 16, 2)) * (Math.pow(
+					Math.atan(Math.pow((x[j] - 2) / 16f, 2)) * (Math.pow(
 					// основание в скобках
 					Math.atan(1 / Math.exp(Math.abs(x[j]))), 
 					// степень в скобках
-					Math.pow(x[j] / 12, 3) / (Math.pow(0.25 - Math.pow(x[j], 1 / 3), 
-					(Math.pow(x[j] + 1/3, x[j]) + 1) / (Math.log(Math.abs(x[j])))))) - 1));
+					Math.pow(x[j] / 12f, 3) / (Math.pow(0.25 - Math.pow(x[j], 1f / 3), 
+					(Math.pow(x[j] + 1f / 3, x[j]) + 1) / (Math.log(Math.abs(x[j])))))) - 1));
                 }
                 System.out.printf("%.4f\t", round(f[i][j], 4));
             }
