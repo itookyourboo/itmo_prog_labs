@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 
-public class Main{
+public class Lab1{
     public static void main(String[] args){
         int[] d = new int[7];
 		for (int i = 0; i < 7; i++)
