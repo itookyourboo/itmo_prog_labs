@@ -23,7 +23,7 @@ public class Main {
                     f[i][j] = Math.atan(Math.sin(Math.asin(Math.sin(x[j]))));
                 } else {
                     f[i][j] = Math.pow(
-                            Math.sin(Math.pow(x[j], (Math.pow((x[j] / 2f + 0.125), 2) - 1) / 1.5f)),
+                            Math.sin(Math.pow(Math.pow(x[j], 1f / 3), (Math.pow((x[j] / 2f + 0.125), 2) - 1) / 0.5f)),
                             Math.atan(Math.pow((x[j] - 2) / 16f, 2)) * (Math.pow(
                                     Math.atan(1 / Math.exp(Math.abs(x[j]))),
                                     Math.pow(x[j] / 12f, 3) / (Math.pow(0.25 - Math.pow(x[j], 1f / 3),
