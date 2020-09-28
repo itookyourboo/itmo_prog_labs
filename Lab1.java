@@ -35,7 +35,7 @@ public class Main {
         }
     }
 
-    private static double round(double x, int n) {
-        return Math.round(x * Math.pow(10, n)) / Math.pow(10, n);
-    }
+//    private static double round(double x, int n) {
+//        return Math.round(x * Math.pow(10, n)) / Math.pow(10, n);
+//    }
 }
