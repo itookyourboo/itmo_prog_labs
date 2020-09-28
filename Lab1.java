@@ -29,7 +29,7 @@ public class Main {
                                     Math.pow(x[j] / 12f, 3) / (Math.pow(0.25 - Math.pow(x[j], 1f / 3),
                                             (Math.pow(x[j] + 1f / 3, x[j]) + 1) / (Math.log(Math.abs(x[j])))))) - 1));
                 }
-                System.out.printf("%.4f\t", round(f[i][j], 4));
+                System.out.printf("%8.4f\t", f[i][j]);
             }
             System.out.println();
         }
