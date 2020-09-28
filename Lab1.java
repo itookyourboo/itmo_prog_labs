@@ -1,17 +1,19 @@
 public class Main {
+
+    private static final int MIN = -10, MAX = 6, ROWS = 7, COLS = 17;
+
     public static void main(String[] args) {
-        int[] d = new int[7];
-	int MIN = -10, MAX = 6;
-		
-        for (int i = 0; i < 7; i++)
+        int[] d = new int[ROWS];
+
+        for (int i = 0; i < ROWS; i++)
             d[i] = 2 * i + 3;
 
-        float[] x = new float[17];
+        float[] x = new float[COLS];
         for (int i = 0; i < x.length; i++) {
             x[i] = (float) (Math.random() * (MAX - MIN) + MIN);
         }
 
-        double[][] f = new double[7][17];
+        double[][] f = new double[ROWS][COLS];
 
         for (int i = 0; i < f.length; i++) {
             for (int j = 0; j < f[i].length; j++) {
